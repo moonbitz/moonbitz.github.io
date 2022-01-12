@@ -1,0 +1,33 @@
+{
+  "name": "moonbitz-website",
+  "private": true,
+  "description": "website",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve --prefix-paths",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "gatsby": "^4.4.0",
+    "gatsby-plugin-emotion": "^7.5.0",
+    "gatsby-plugin-image": "^2.5.0",
+    "gatsby-plugin-sharp": "^4.5.0",
+    "gatsby-source-filesystem": "^4.5.0",
+    "p5": "^1.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-p5-wrapper": "^3.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.5.1"
+  }
+}
