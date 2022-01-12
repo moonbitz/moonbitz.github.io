@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-hashoctoz-play-birth-index-js-21325dbe629cc2e2299d.js","mappings":"sJAMA,UAJc,WACZ,OAAO","sources":["webpack://moonbitz-website/./src/pages/hashoctoz/play/birth/index.js"],"sourcesContent":["import React from \"react\"\n\nconst Birth = () => {\n  return <div></div>\n}\n\nexport default Birth\n"],"names":[],"sourceRoot":""}

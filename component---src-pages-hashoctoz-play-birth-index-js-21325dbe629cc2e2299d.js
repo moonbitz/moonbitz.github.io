@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmoonbitz_website=self.webpackChunkmoonbitz_website||[]).push([[800],{8076:function(e,t,n){n.r(t);n(7294);var u=n(3431);t.default=function(){return(0,u.tZ)("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-hashoctoz-play-birth-index-js-21325dbe629cc2e2299d.js.map
