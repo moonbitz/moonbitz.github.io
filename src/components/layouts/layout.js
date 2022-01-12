@@ -1,6 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/react"
+import Header from "../header"
 
 const Layout = ({ title, children }) => {
   const data = useStaticQuery(graphql`
@@ -43,6 +44,7 @@ const Layout = ({ title, children }) => {
       <title>
         {title} | {data.site.siteMetadata.title}
       </title>
+      <Header />
       <main>{children}</main>
     </>
   )

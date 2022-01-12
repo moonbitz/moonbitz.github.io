@@ -7,8 +7,6 @@ const Home = ({ data }) => {
 
   return (
     <Layout title="Moonbitz">
-      <h1>Moonbitz</h1>
-
       <p>The website is currently being designed. Come back again soon.</p>
 
       <ul>
@@ -25,11 +23,9 @@ const Home = ({ data }) => {
       </ul>
 
       <ol>
-        {/* <li>
-          <Link to="/hashoctoz/play/birth/">
-            HashOctoz: Birth
-          </Link>
-        </li> */}
+        <li>
+          <Link to="/hashoctoz/play/birth/">HashOctoz: Birth</Link>
+        </li>
         <li>
           <Link to="/hashoctoz/play/hotsprings/">HashOctoz: Hot Springs</Link>
         </li>
