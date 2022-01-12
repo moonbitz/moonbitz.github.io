@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layouts/layout"
 
-export default function Home({ data }) {
+const Home = ({ data }) => {
   const metadata = data.site.siteMetadata
 
   return (
@@ -26,19 +26,19 @@ export default function Home({ data }) {
 
       <ol>
         {/* <li>
-          <Link to="/hashoctoz/playgrounds/birth/">
+          <Link to="/hashoctoz/play/birth/">
             HashOctoz: Birth
           </Link>
         </li> */}
         <li>
-          <Link to="/hashoctoz/playgrounds/hotsprings/">
-            HashOctoz: Hot Springs
-          </Link>
+          <Link to="/hashoctoz/play/hotsprings/">HashOctoz: Hot Springs</Link>
         </li>
       </ol>
     </Layout>
   )
 }
+
+export default Home
 
 export const query = graphql`
   query {
