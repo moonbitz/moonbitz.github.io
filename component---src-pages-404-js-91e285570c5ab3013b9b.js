@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmoonbitz_website=self.webpackChunkmoonbitz_website||[]).push([[883],{9616:function(n,t,e){e.r(t),e.d(t,{default:function(){return i}});e(7294);var u=e(3431);function i(){return(0,u.tZ)("div",null,"Page Not Found")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-91e285570c5ab3013b9b.js.map
