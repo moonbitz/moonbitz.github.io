@@ -22,9 +22,17 @@ const Layout = ({ title, children }) => {
     <>
       <Global
         styles={css`
+          /* 
+          lores-9-wide 
+          lores-9-plus-wide
+          lores-12
+          */
           html,
           body {
-            //
+            font-family: lores-12, sans-serif;
+            // font-weight: 400;
+            font-style: normal;
+            font-size: 10px;
           }
 
           a {

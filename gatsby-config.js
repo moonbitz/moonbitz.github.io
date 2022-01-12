@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   // pathPrefix: `/hashoctoz`,
   siteMetadata: {
@@ -12,6 +14,14 @@ module.exports = {
     `gatsby-plugin-emotion`,
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
