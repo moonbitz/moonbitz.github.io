@@ -14,7 +14,7 @@ export default function HotSprings() {
   const isSSR = typeof window === "undefined"
 
   return (
-    <LayoutSketch title="HashOctoz Playground: Hot Springs">
+    <LayoutSketch title="HashOctoz Play: Hot Springs">
       <div>
         <Global
           styles={css`
