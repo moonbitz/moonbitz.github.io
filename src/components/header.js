@@ -5,16 +5,18 @@ import styled from "@emotion/styled"
 const Wrapper = styled.div`
   width: 100%;
 
-  background: black;
+  background: gold;
 `
 
 const SiteHeading = styled.h1`
   font-family: lores-12, sans-serif;
   font-size: 2rem;
 
+  text-align: center;
+
   a {
     text-decoration: none;
-    color: #999;
+    color: #333;
   }
 `
 
