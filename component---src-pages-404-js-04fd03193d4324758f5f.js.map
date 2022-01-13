@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-404-js-04fd03193d4324758f5f.js","mappings":"4LAEe,SAASA,IACtB,OAAO","sources":["webpack://moonbitz-website/./src/pages/404.js"],"sourcesContent":["import React from \"react\"\n\nexport default function PageNotFound() {\n  return <div>Page Not Found</div>\n}\n"],"names":["PageNotFound"],"sourceRoot":""}
