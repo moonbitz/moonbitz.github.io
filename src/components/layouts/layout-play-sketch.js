@@ -85,7 +85,7 @@ const LayoutPlaySketch = ({ title, children }) => {
       <title>
         {title} | {data.site.siteMetadata.title}
       </title>
-      <Header />
+      {/* <Header /> */}
       <main>{children}</main>
       <Cta className="unselectable" />
     </>

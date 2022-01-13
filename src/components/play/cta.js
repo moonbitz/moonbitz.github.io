@@ -9,7 +9,7 @@ const CTAStyled = styled("div")`
 
   h2.title {
     padding: 1px 8px;
-    font-size: 12px;
+    font-size: 1.6rem;
 
     color: #8477b7;
   }
