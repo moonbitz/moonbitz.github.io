@@ -24,12 +24,6 @@ const Wrapper = styled.div`
   h2 {
     text-decoration: underline;
   }
-
-  p {
-    margin: 0;
-    margin-bottom: 8px;
-  }
-
   a {
     text-decoration: none;
   }
@@ -43,19 +37,27 @@ const Wrapper = styled.div`
   }
 `
 
-const CallOut = styled.p`
+const ImageGrid = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+`
+
+const CallOut = styled.a`
   padding: 12px 20px;
+
+  display: block;
   background: gold;
   border-radius: 12px;
 
   text-align: center;
   font-size: ${props => props.theme.fontSizes.big};
 
-  a {
-    color: black;
-  }
-  a:hover {
-    color: darkblue;
+  &:hover {
+    background: #ffaa00;
   }
 `
 
@@ -64,22 +66,38 @@ const Home = ({ data }) => {
 
   return (
     <Layout title="We Are Moonbitz">
-      <Wrapper>
-        <p
+      <ImageGrid>
+        <StaticImage
+          src="../images/thumb-octoz/hashoctoz-16.png"
+          alt="hashoctoz #35"
           css={css`
-            border: 2px solid black;
-            padding: 12px;
-            border-radius: 12px;
+            width: 100%;
           `}
-        >
-          Thank you for visiting. The website is currently being updated. Please
-          come back again soon. Follow us on{" "}
-          <a href={metadata.twitter} target="_blank" rel="noreferrer">
-            Twitter
-          </a>{" "}
-          for updates.
-        </p>
+        />
+        <StaticImage
+          src="../images/thumb-octoz/hashoctoz-25.png"
+          alt="hashoctoz #25"
+          css={css`
+            width: 100%;
+          `}
+        />
+        <StaticImage
+          src="../images/thumb-octoz/hashoctoz-61.png"
+          alt="hashoctoz #36"
+          css={css`
+            width: 100%;
+          `}
+        />
+        <StaticImage
+          src="../images/thumb-octoz/hashoctoz-53.png"
+          alt="hashoctoz #53"
+          css={css`
+            width: 100%;
+          `}
+        />
+      </ImageGrid>
 
+      <Wrapper>
         <section>
           <h2>Who is Moonbitz?</h2>
           <p>
@@ -97,10 +115,9 @@ const Home = ({ data }) => {
             HashOctoz is our first generative NFT series on the Tezos
             blockchain. There will be only 500 unique HashOctoz character NFTs.
           </p>
-          <CallOut>
-            <a href={metadata.fxhash} target="_blank" rel="noreferrer">
-              Buy your HashOctoz now at fxhash.xyz.
-            </a>
+
+          <CallOut href={metadata.fxhash} target="_blank" rel="noreferrer">
+            Buy your HashOctoz now at fxhash.xyz
           </CallOut>
         </section>
 
@@ -109,10 +126,11 @@ const Home = ({ data }) => {
           <p>
             Your HashOcto is immutably stored on the Tezos blockchain, so it is
             yours to keep. You can think of it like a collection card. The
-            difference is that it can move and interact as a digital toekn. We
-            are also developing bonus content and interactive experience for the
-            HashOctoz holders to enjoy. We will create at least five HashOctoz
-            Playground. We also have bigger plans, which we described down
+            difference is that it can move and interact as a digital token. You
+            can even sell the tokens you own. We are also developing bonus
+            content and interactive experience for the HashOctoz holders to
+            enjoy. We will create at least five HashOctoz Playground in the
+            coming months. We also have bigger plans, which we described down
             below.
           </p>
         </section>
@@ -128,7 +146,7 @@ const Home = ({ data }) => {
           </p>
           <ol>
             <li>
-              <Link to="/hashoctoz/play/hotsprings/">
+              <Link to={"/hashoctoz/play/hotsprings/"}>
                 <p>Hot Springs (Available now!)</p>
                 <StaticImage
                   src="../images/hotsprings.png"

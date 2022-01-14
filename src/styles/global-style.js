@@ -21,12 +21,14 @@ const GlobalStyle = props => {
         }
 
         body {
+          background: ${theme.colors.background};
+          color: ${theme.colors.text};
           font-family: ${theme.fonts.bitmap};
           font-size: ${theme.fontSizes.medium};
         }
 
         a {
-          color: ${theme.colors.primary};
+          color: ${theme.colors.link};
           text-underline-offset: 2px;
           // text-decoration: none;
         }
@@ -40,6 +42,15 @@ const GlobalStyle = props => {
           font-family: ${theme.fonts.bitmap};
           font-weight: ${theme.fontWeights.regular};
           margin-top: 0;
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 8px;
+        }
+
+        a {
+          text-decoration: underline;
         }
 
         ol,

@@ -9,6 +9,9 @@ const Wrapper = styled.div`
 `
 
 const SiteHeading = styled.h1`
+  margin: 0;
+  padding: 0;
+
   font-family: lores-12, sans-serif;
   font-size: 2rem;
 

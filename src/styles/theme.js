@@ -5,6 +5,9 @@ const theme = {
     lightgray: "#aaa",
     brightgray: "#f6f6f0",
     primary: "#0000ff",
+    background: "thistle",
+    text: "black",
+    link: "mediumblue",
   },
   fonts: {
     bitmap: "lores-12, sans-serif",
