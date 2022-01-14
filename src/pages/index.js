@@ -43,6 +43,22 @@ const Wrapper = styled.div`
   }
 `
 
+const CallOut = styled.p`
+  padding: 12px 20px;
+  background: gold;
+  border-radius: 12px;
+
+  text-align: center;
+  font-size: ${props => props.theme.fontSizes.big};
+
+  a {
+    color: black;
+  }
+  a:hover {
+    color: darkblue;
+  }
+`
+
 const Home = ({ data }) => {
   const metadata = data.site.siteMetadata
 
@@ -71,7 +87,7 @@ const Home = ({ data }) => {
             video games. We were very excited to learn about the generative
             NFTs, and decided to jump in, and the Tezos and fxhash seemed like a
             great choice for us. We want to stay here as long as we can, and
-            hopefully, this will become our full time job.
+            hopefully, one day this will become our full time job.
           </p>
         </section>
 
@@ -80,18 +96,21 @@ const Home = ({ data }) => {
           <p>
             HashOctoz is our first generative NFT series on the Tezos
             blockchain. There will be only 500 unique HashOctoz character NFTs.
-            Buy your HashOctoz now at{" "}
-            <a href={metadata.fxhash} target="_blank" rel="noreferrer">
-              fxhash.xyz
-            </a>
-            .
           </p>
+          <CallOut>
+            <a href={metadata.fxhash} target="_blank" rel="noreferrer">
+              Buy your HashOctoz now at fxhash.xyz.
+            </a>
+          </CallOut>
         </section>
 
         <section>
           <h2>What can you do with HashOctoz?</h2>
           <p>
-            We are developing bonus content and interactive experience for the
+            Your HashOcto is immutably stored on the Tezos blockchain, so it is
+            yours to keep. You can think of it like a collection card. The
+            difference is that it can move and interact as a digital toekn. We
+            are also developing bonus content and interactive experience for the
             HashOctoz holders to enjoy. We will create at least five HashOctoz
             Playground. We also have bigger plans, which we described down
             below.
