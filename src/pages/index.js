@@ -99,17 +99,6 @@ const Home = ({ data }) => {
 
       <Wrapper>
         <section>
-          <h2>Who is Moonbitz?</h2>
-          <p>
-            We are a small team of designer/developer. We love cartoons and
-            video games. We were very excited to learn about the generative
-            NFTs, and decided to jump in, and the Tezos and fxhash seemed like a
-            great choice for us. We want to stay here as long as we can, and
-            hopefully, one day this will become our full time job.
-          </p>
-        </section>
-
-        <section>
           <h2>What is HashOctoz?</h2>
           <p>
             HashOctoz is our first generative NFT series on the Tezos
@@ -173,6 +162,16 @@ const Home = ({ data }) => {
             <li>Volcano (in early development stage)</li>
             <li>Swamp (why not?)</li>
           </ol>
+        </section>
+        <section>
+          <h2>Who is Moonbitz?</h2>
+          <p>
+            We are a small team of designer/developer. We love cartoons and
+            video games. We were very excited to learn about the generative
+            NFTs, and decided to jump in, and the Tezos and fxhash seemed like a
+            great choice for us. We want to stay here as long as we can, and
+            hopefully, one day this will become our full time job.
+          </p>
         </section>
         <section>
           <h2>What other plans do you have?</h2>
