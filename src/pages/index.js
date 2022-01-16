@@ -151,7 +151,7 @@ const Home = ({ data }) => {
               <Link to={"/hashoctoz/play/wakeup/"}>
                 <p>Wake Up</p>
                 <StaticImage
-                  src="../images/birth.png"
+                  src="../images/wakeup.png"
                   alt="HashOctoz Wake Up"
                   css={css`
                     width: 100%;
