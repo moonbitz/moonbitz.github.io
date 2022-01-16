@@ -148,15 +148,17 @@ const Home = ({ data }) => {
               </Link>
             </li>
             <li>
-              <p>Birth (Coming Soon in January 2022)</p>
-              <StaticImage
-                src="../images/birth.png"
-                alt="HashOctoz Birth"
-                css={css`
-                  width: 100%;
-                  height: 200px;
-                `}
-              />
+              <Link to={"/hashoctoz/play/wakeup/"}>
+                <p>Wake Up</p>
+                <StaticImage
+                  src="../images/birth.png"
+                  alt="HashOctoz Wake Up"
+                  css={css`
+                    width: 100%;
+                    height: 200px;
+                  `}
+                />
+              </Link>
             </li>
             <li>Oasis (in early development stage)</li>
             <li>Volcano (in early development stage)</li>

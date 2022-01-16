@@ -4,7 +4,7 @@ import { Global, css } from "@emotion/react"
 import Header from "../header"
 import Cta from "../play/cta"
 
-const LayoutPlaySketch = ({ title, children }) => {
+const LayoutPlaySketch = ({ title, background, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -57,6 +57,8 @@ const LayoutPlaySketch = ({ title, children }) => {
             font-size: 10px;
 
             position: relative;
+
+            background: ${background};
           }
 
           a {
