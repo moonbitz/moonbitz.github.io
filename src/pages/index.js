@@ -129,14 +129,12 @@ const Home = ({ data }) => {
             HashOctoz Playground is a series of interactive experience on the
             web that uses already minted HashOctoz NFT token data fetched from
             fxhash API. This way, we can provide additional content even after
-            the token has been minted and stored immutably on the blockchain.
-            Currently, there is already one playground for you to enjoy, and
-            more are coming soon.
+            the token has been minted.
           </p>
           <ol>
             <li>
               <Link to={"/hashoctoz/play/hotsprings/"}>
-                <p>Hot Springs (Available now!)</p>
+                <p>Hot Springs</p>
                 <StaticImage
                   src="../images/hotsprings.png"
                   alt="HashOctoz Hot Springs"
@@ -160,9 +158,22 @@ const Home = ({ data }) => {
                 />
               </Link>
             </li>
+            <li>
+              <Link to={"/hashoctoz/play/busstop/"}>
+                <p>Bus Stop</p>
+                <StaticImage
+                  src="../images/busstop.png"
+                  alt="HashOctoz Bus Stop"
+                  css={css`
+                    width: 100%;
+                    height: 200px;
+                  `}
+                />
+              </Link>
+            </li>
             <li>Oasis (in early development stage)</li>
             <li>Volcano (in early development stage)</li>
-            <li>Swamp (why not?)</li>
+            {/* <li>Swamp (why not?)</li> */}
           </ol>
         </section>
         <section>
@@ -176,7 +187,7 @@ const Home = ({ data }) => {
           </p>
         </section>
         <section>
-          <h2>What other plans do you have?</h2>
+          <h2>What plans do you have?</h2>
           <p>
             Well, we have so many exciting ideas in mind! Our goal is to build
             the OctoVerse with characters, items, stories and possibly games,

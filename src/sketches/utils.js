@@ -149,12 +149,25 @@ export function shuffle(a) {
 // easing euqations from https://easings.net/
 export function ease(x, type) {
   switch (type) {
+    case "easeInSine":
+      return 1 - Math.cos((x * Math.PI) / 2)
+    case "easeOutSine":
+      return Math.sin((x * Math.PI) / 2)
+    case "easeInOutSine":
+      return -(Math.cos(Math.PI * x) - 1) / 2
     case "easeInCubic":
       return x * x * x
     case "easeOutCubic":
       return 1 - Math.pow(1 - x, 3)
+    case "easeInOutCubic":
+      return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2
     case "easeInQuint":
       return x * x * x * x * x
+    case "easeOutQuint":
+      return 1 - Math.pow(1 - x, 5)
+    case "easeInOutQuint":
+      return x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2
+    case "linear":
     case null:
     default:
       return x
