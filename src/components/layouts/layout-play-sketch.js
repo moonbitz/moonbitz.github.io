@@ -1,8 +1,28 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/react"
+import styled from "@emotion/styled"
 import Header from "../header"
 import Cta from "../play/cta"
+
+const Wrapper = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+`
+
+const FlexContainer = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 const LayoutPlaySketch = ({ title, background, children }) => {
   const data = useStaticQuery(graphql`
@@ -47,8 +67,8 @@ const LayoutPlaySketch = ({ title, background, children }) => {
 
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            // justify-content: center;
+            // align-items: center;
 
             // font-family: "PressStart2P", cursive;
             font-family: lores-12, sans-serif;
@@ -59,6 +79,12 @@ const LayoutPlaySketch = ({ title, background, children }) => {
             position: relative;
 
             background: ${background};
+          }
+
+          /* for full page height */
+          #___gatsby,
+          #gatsby-focus-wrapper {
+            height: 100%;
           }
 
           a {
@@ -73,23 +99,18 @@ const LayoutPlaySketch = ({ title, background, children }) => {
           #p5_loading {
             display: none;
           }
-
-          .unselectable {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-          }
         `}
       />
       <title>
         {title} | {data.site.siteMetadata.title}
       </title>
-      {/* <Header /> */}
-      <main>{children}</main>
-      <Cta className="unselectable" />
+      <Wrapper>
+        <Header />
+        <FlexContainer>
+          <main>{children}</main>
+        </FlexContainer>
+      </Wrapper>
+      <Cta />
     </>
   )
 }

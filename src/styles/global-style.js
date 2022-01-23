@@ -14,6 +14,12 @@ const GlobalStyle = props => {
           box-sizing: border-box;
         }
 
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
         html {
           font-size: 10px;
           line-height: ${theme.lineHeights.normal};
@@ -41,7 +47,7 @@ const GlobalStyle = props => {
         h6 {
           font-family: ${theme.fonts.bitmap};
           font-weight: ${theme.fontWeights.regular};
-          margin-top: 0;
+          margin: 0;
         }
 
         p {

@@ -5,7 +5,7 @@ import SketchWrapper from "../../../../components/play/sketchWrapper"
 
 const BusStop = () => {
   return (
-    <LayoutPlaySketch title="HashOctoz Play: Bus Stop" background="#333">
+    <LayoutPlaySketch title="HashOctoz Play: Bus Stop" background="#303">
       <SketchWrapper sketch={BusStopSketch} />
     </LayoutPlaySketch>
   )

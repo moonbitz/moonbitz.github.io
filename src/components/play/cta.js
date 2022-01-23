@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 const CTAStyled = styled("div")`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 
