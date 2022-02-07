@@ -5,7 +5,7 @@ const theme = {
     lightgray: "#aaa",
     brightgray: "#f6f6f0",
     primary: "#0000ff",
-    background: "thistle",
+    background: "#effacc",
     text: "black",
     link: "mediumblue",
   },

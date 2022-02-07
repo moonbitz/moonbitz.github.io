@@ -126,10 +126,10 @@ const Home = ({ data }) => {
         <section>
           <h2>What is HashOctoz Playground?</h2>
           <p>
-            HashOctoz Playground is a series of interactive experience on the
-            web that uses already minted HashOctoz NFT token data fetched from
-            fxhash API. This way, we can provide additional content even after
-            the token has been minted.
+            HashOctoz Playground is a series of web experience. There are
+            playgrounds that use HashOctoz NFT token data fetched from fxhash
+            API. Others are Animated GIFs. This way, we can provide additional
+            related content even after the token has been minted.
           </p>
           <ol>
             <li>
@@ -171,8 +171,21 @@ const Home = ({ data }) => {
                 />
               </Link>
             </li>
-            <li>Oasis (in early development stage)</li>
-            <li>Volcano (in early development stage)</li>
+            <li>
+              {" "}
+              <a href="https://versum.xyz/token/versum/9201">
+                <p>Octoz Room: Bathroom (We made it as an NFT on Versum!)</p>
+                <StaticImage
+                  src="../images/bathroom.png"
+                  alt="Octoz Room: Bathroom"
+                  css={css`
+                    width: 100%;
+                    height: 200px;
+                  `}
+                />
+              </a>
+            </li>
+            <li>in early development stage</li>
             {/* <li>Swamp (why not?)</li> */}
           </ol>
         </section>
